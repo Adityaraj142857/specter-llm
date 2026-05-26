@@ -1,6 +1,11 @@
+streamlit
+pymupdf
 pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-scipy
+pydantic
+python-dotenv
+sentence-transformers
+transformers
+torch
+spacy
+requests
+qdrant-client
