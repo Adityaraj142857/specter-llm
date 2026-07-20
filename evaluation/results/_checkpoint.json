@@ -1,0 +1,1429 @@
+{
+  "partial": true,
+  "scored_so_far": 8,
+  "per_question": [
+    {
+      "id": "Q1",
+      "category": "parties",
+      "question": "Who are the parties to this endorsement agreement?",
+      "ground_truth": "The agreement is between Geno Auriemma, an individual referred to as 'Auriemma', and Berkshire Bank, a Massachusetts savings bank with its principal place of business at 24 North Street, Pittsfield, MA 01210.",
+      "generated_answer": "According to Section 2 (ENDORSEMENT AND GRANT OF RIGHTS), the Parties to this Endorsement Agreement are Berkshire Hills Bancorp Inc and Auriemma.",
+      "retrieved_clauses": [
+        {
+          "id": "8_protection_of_the_auriemma_identification_berkshire_and_auriemma_agree_that_th_43fbd068",
+          "heading": "8. PROTECTION OF THE AURIEMMA IDENTIFICATION. Berkshire and Auriemma agree that they will take all necessary steps during the",
+          "section": "8",
+          "distance": 0.3364064693450928,
+          "graph_expanded": false,
+          "text_preview": "Contract Period and thereafter to protect the Auriemma Identification in connection with the Endorsement Services."
+        },
+        {
+          "id": "26_construction_978bc904",
+          "heading": "26. CONSTRUCTION.",
+          "section": "26",
+          "distance": 0.34306204319000244,
+          "graph_expanded": false,
+          "text_preview": "The Parties acknowledge that this Agreement was negotiated between them and shall not be construed against either Party on the grounds of\nauthorship."
+        },
+        {
+          "id": "2_endorsement_and_grant_of_rights_during_the_contract_period_a352fe4c",
+          "heading": "2. ENDORSEMENT AND GRANT OF RIGHTS. During the Contract Period:",
+          "section": "2",
+          "distance": 0.3552688956260681,
+          "graph_expanded": false,
+          "text_preview": "a) Subject to the terms of Paragraph 6 below, Auriemma will make the appearances and provide to Berkshire during the Services Period\nthe services, initiatives and programs described in Schedule A atta"
+        },
+        {
+          "id": "16_entire_agreement_639dd17b",
+          "heading": "16. ENTIRE AGREEMENT.",
+          "section": "16",
+          "distance": 0.3701244592666626,
+          "graph_expanded": false,
+          "text_preview": "This Agreement is the entire agreement of the parties and cannot be altered or modified except by an agreement in writing signed by both parties.\nUpon its execution, this Agreement shall supersede all"
+        },
+        {
+          "id": "13_miscellaneous_provisions_c1311bec",
+          "heading": "13. MISCELLANEOUS PROVISIONS.",
+          "section": "13",
+          "distance": 0.3767300844192505,
+          "graph_expanded": false,
+          "text_preview": "If any provision(s) of this Agreement shall be determined to be void, ambiguous, or unenforceable, the same shall be stricken from this Agreement\nand in no way shall affect other provisions of, or the"
+        }
+      ],
+      "latency_seconds": 8.53,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.009,
+          "precisions": [
+            0.3182,
+            0.0048,
+            0.005,
+            0.0053
+          ],
+          "brevity_penalty": 0.6347,
+          "candidate_length": 22,
+          "reference_length": 32
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 0.3182,
+            "recall": 0.2188,
+            "f1": 0.2593
+          },
+          "rouge2": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "rougeL": {
+            "precision": 0.1364,
+            "recall": 0.0938,
+            "f1": 0.1111
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": 0.5,
+            "supported_claims": 1,
+            "total_claims": 2,
+            "claims": [
+              "Berkshire Hills Bancorp Inc",
+              "Auriemma"
+            ],
+            "verdicts": [
+              {
+                "claim": "BERKSHIRE HILLS BANCORP INC",
+                "supported": 0,
+                "reason": "The context does not mention Berkshire Hills Bancorp Inc as a party to the agreement"
+              },
+              {
+                "claim": "Auriemma",
+                "supported": 1,
+                "reason": "The context mentions Auriemma as one of the parties and refers to it in relation to the Endorsement Services and the Auriemma Identification"
+              }
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.8346,
+            "generated_questions": [
+              "What is the name of the company that signed the Endorsement Agreement?",
+              "Who is the other party to the Endorsement Agreement?",
+              "What section of the agreement does it specify the parties involved?"
+            ],
+            "similarities": [
+              0.8243,
+              0.9321,
+              0.7474
+            ]
+          },
+          "context_precision": {
+            "score": 0.6792,
+            "useful_flags": [
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            "reasons": [
+              "The retrieved chunk does not mention the parties to the endorsement agreement.",
+              "Provides key information about the parties involved in the agreement, including their identities and affiliations.",
+              "The retrieved chunk provides specific details about the parties involved in the endorsement agreement, including the individual (Auriemma) and the bank (Berkshire Bank), which matches the correct answ",
+              "Provides key information about the parties involved in the endorsement agreement.",
+              "Provides key information about the parties involved in the endorsement agreement, including names and addresses."
+            ]
+          },
+          "context_recall": {
+            "score": 0.3333,
+            "attributed_sentences": 3,
+            "total_sentences": 9,
+            "verdicts": [
+              {
+                "sentence": "The agreement is between Geno Auriemma, an individual referred to as 'Auriemma', and Berkshire Bank, a Massachusetts savings bank with its principal place of business at 24 North Street, Pittsfield, MA 01210.",
+                "attributed": 0,
+                "reason": "No information about the parties involved in the agreement is provided in the context."
+              },
+              {
+                "sentence": "Subject to the terms of Paragraph 6 below, Auriemma will make the appearances and provide to Berkshire during the Services Period the services, initiatives and programs described in Schedule A attached hereto (the \"Endorsement Services\");",
+                "attributed": 1,
+                "reason": "The context mentions 'Auriemma' as a party involved in the agreement."
+              },
+              {
+                "sentence": "Auriemma grants to Berkshire the exclusive right and license (the \"License Rights\") to use the Auriemma Identification during the Contract Period and throughout the Contract Territory solely in connection with the advertisement and promotion of Berkshire and the Financial Services;",
+                "attributed": 1,
+                "reason": "The context mentions 'Auriemma' as a party involved in the agreement."
+              },
+              {
+                "sentence": "The License Rights are exclusive to Berkshire and may not be assigned or in any way conveyed by Berkshire without Auriemma's express written consent, except in the event of a merger by Berkshire with another entity offering Banking Services.",
+                "attributed": 1,
+                "reason": "The context mentions 'Auriemma' as a party involved in the agreement."
+              },
+              {
+                "sentence": "This Agreement is the entire agreement of the parties and cannot be altered or modified except by an agreement in writing signed by both parties.",
+                "attributed": 0,
+                "reason": "No information about the specific terms of the agreement is provided in the context."
+              },
+              {
+                "sentence": "Upon its execution, this Agreement shall supersede all prior negotiations, understandings and agreements, whether oral or written, and such prior agreements shall thereupon be null and void and without further legal effect.",
+                "attributed": 0,
+                "reason": "No information about the specific terms of the agreement is provided in the context."
+              },
+              {
+                "sentence": "If any provision(s) of this Agreement shall be determined to be void, ambiguous, or unenforceable, the same shall be stricken from this Agreement and in no way shall affect other provisions of, or the validity or enforceability of this Agreement.",
+                "attributed": 0,
+                "reason": "No information about the specific terms of the agreement is provided in the context."
+              },
+              {
+                "sentence": "The Parties understand that the contents of this Agreement are confidential, and that disclosure of same to any third party could be detrimental to the interests of one or both Parties.",
+                "attributed": 0,
+                "reason": "No information about the specific terms of the agreement is provided in the context."
+              },
+              {
+                "sentence": "Therefore, the Parties agree not to disclose the terms of this Agreement, without the prior written permission of the other party, other than to business advisors, legal and financial representatives, except as required by federal securities laws, or federal or state banking laws.",
+                "attributed": 0,
+                "reason": "No information about the specific terms of the agreement is provided in the context."
+              }
+            ]
+          },
+          "ragas_score": 0.5215
+        },
+        "laaj": {
+          "scores": {},
+          "error": "judge did not return parseable JSON"
+        }
+      }
+    },
+    {
+      "id": "Q2",
+      "category": "term",
+      "question": "When does the contract period end, and when does the services period end?",
+      "ground_truth": "Both periods start when the agreement is fully executed by both parties. The Contract Period ends on May 31, 2016, and the Services Period ends on May 31, 2014, unless either is terminated sooner under the agreement.",
+      "generated_answer": "The Contract Period ends on May 31, 2016.\n\nThe Services Period ends on May 31, 2014.",
+      "retrieved_clauses": [
+        {
+          "id": "1_definitions_ca2d3b00",
+          "heading": "1. DEFINITIONS.",
+          "section": "1",
+          "distance": 0.28800469636917114,
+          "graph_expanded": false,
+          "text_preview": "The following terms shall be defined in the Agreement as follows:\n\na) \"CONTRACT PERIOD\" means that period of time commencing upon the full execution of this Agreement by both Parties and\nterminating o"
+        },
+        {
+          "id": "10_termination_and_default_d03cf9ee",
+          "heading": "10. TERMINATION AND DEFAULT.",
+          "section": "10",
+          "distance": 0.32943111658096313,
+          "graph_expanded": false,
+          "text_preview": "a) TERMINATION FOR BREACH. Either Party shall have the right, without prejudice to any other rights it may have, to terminate this\nAgreement if the other Party materially breaches its obligation hereu"
+        },
+        {
+          "id": "2_endorsement_and_grant_of_rights_during_the_contract_period_a352fe4c",
+          "heading": "2. ENDORSEMENT AND GRANT OF RIGHTS. During the Contract Period:",
+          "section": "2",
+          "distance": 0.3406364321708679,
+          "graph_expanded": false,
+          "text_preview": "a) Subject to the terms of Paragraph 6 below, Auriemma will make the appearances and provide to Berkshire during the Services Period\nthe services, initiatives and programs described in Schedule A atta"
+        },
+        {
+          "id": "5_auriemma_will_be_available_for_two_2_appearances_annually_during_the_services__60917e6e",
+          "heading": "5. Auriemma will be available for two (2) appearances annually during the Services Period within the Contract Territory, the date and location to be",
+          "section": "5",
+          "distance": 0.3448411822319031,
+          "graph_expanded": false,
+          "text_preview": "mutually agreed upon, each not more than one (1) hour in duration, where Auriemma will meet, greet and pose for photos."
+        },
+        {
+          "id": "15_force_majeur_0dd80abd",
+          "heading": "15. FORCE MAJEUR.",
+          "section": "15",
+          "distance": 0.36117690801620483,
+          "graph_expanded": false,
+          "text_preview": "Notwithstanding anything else contained in this Agreement, neither Party will be liable for any delay in the performance of any of its obligations if\nsuch delay is caused by any reason wholly outside "
+        }
+      ],
+      "latency_seconds": 11.81,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.2384,
+          "precisions": [
+            1.0,
+            0.9333,
+            0.8571,
+            0.7692
+          ],
+          "brevity_penalty": 0.2691,
+          "candidate_length": 16,
+          "reference_length": 37
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 1.0,
+            "recall": 0.4324,
+            "f1": 0.6038
+          },
+          "rouge2": {
+            "precision": 0.9333,
+            "recall": 0.3889,
+            "f1": 0.549
+          },
+          "rougeL": {
+            "precision": 1.0,
+            "recall": 0.4324,
+            "f1": 0.6038
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": 1.0,
+            "supported_claims": 2,
+            "total_claims": 2,
+            "claims": [
+              "The Contract Period ends on May 31, 2016.",
+              "The Services Period ends on May 31, 2014."
+            ],
+            "verdicts": [
+              {
+                "claim": "The Contract Period ends on May 31, 2016.",
+                "supported": 1,
+                "reason": "a) 'CONTRACT PERIOD' means that period of time commencing upon the full execution of this Agreement by both Parties and terminating on May 31, 2016"
+              },
+              {
+                "claim": "The Services Period ends on May 31, 2014.",
+                "supported": 1,
+                "reason": "b) 'SERVICES PERIOD' means that period of time commencing upon the full execution of this Agreement by both Parties and terminating on May 31, 2014"
+              }
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.898,
+            "generated_questions": [
+              "What is the end date of the contract period?",
+              "When does the services period expire?",
+              "Is the contract period ending before or after the services period?"
+            ],
+            "similarities": [
+              0.8848,
+              0.8556,
+              0.9535
+            ]
+          },
+          "context_precision": {
+            "score": 0.7556,
+            "useful_flags": [
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            "reasons": [
+              "The retrieved chunk provides definitions for both Contract Period and Services Period, which directly answers the question of when each period ends.",
+              "The retrieved chunk does not provide information about when the contract period ends and when the services period ends. It only discusses termination conditions and effects of termination.",
+              "The retrieved chunk provides specific details about the services period (Services Period ends on May 31, 2014) and contract period (Contract Period ends on May 31, 2016), which are part of the correct",
+              "The retrieved chunk does not mention anything about contract periods, services periods, or the dates May 31, 2016, and May 31, 2014.",
+              "Provides a specific definition of Force Majeur Event and its impact on contract obligations, which indirectly informs the start dates of the Contract Period and Services Period."
+            ]
+          },
+          "context_recall": {
+            "score": 1.0,
+            "attributed_sentences": 2,
+            "total_sentences": 2,
+            "verdicts": [
+              {
+                "sentence": "Both periods start when the agreement is fully executed by both parties.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "The Contract Period ends on May 31, 2016, and the Services Period ends on May 31, 2014, unless either is terminated sooner under the agreement.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              }
+            ]
+          },
+          "ragas_score": 0.9015
+        },
+        "laaj": {
+          "scores": {
+            "correctness": 2,
+            "completeness": 1,
+            "groundedness": 3,
+            "clarity": 4
+          },
+          "reasons": {
+            "correctness": "The answer incorrectly states that both periods end on May 31, 2016, when in fact they start and end on different dates.",
+            "completeness": "The answer does not cover the termination conditions for either period.",
+            "groundedness": "Most statements are grounded in the context, but one minor statement is missing support.",
+            "clarity": "The language is mostly clear and direct, but could benefit from a slight rewording for better readability."
+          },
+          "overall_verdict": "The answer contains some factual errors and lacks completeness, but its overall structure and clarity are good.",
+          "mean_score_5": 2.5,
+          "normalised_score": 0.375
+        }
+      }
+    },
+    {
+      "id": "Q3",
+      "category": "compensation",
+      "question": "What is the total compensation Berkshire agreed to pay Auriemma?",
+      "ground_truth": "Berkshire agreed to pay Auriemma a total of Four Hundred Eighty Thousand Dollars ($480,000.00) in consideration of the rights and benefits granted under the agreement.",
+      "generated_answer": "The total compensation Berkshire agreed to pay Auriemma is $480,000.00. This amount will be paid in four equal cash payments of $90,000.00 on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015.",
+      "retrieved_clauses": [
+        {
+          "id": "4_compensation_857bf989",
+          "heading": "4. COMPENSATION.",
+          "section": "4",
+          "distance": 0.13044947385787964,
+          "graph_expanded": false,
+          "text_preview": "(a) In consideration of the rights and benefits granted to Berkshire hereunder, Berkshire shall pay to Auriemma the sum of Four\nHundred Eighty Thousand and 00/100 Dollars ($480,000.00), as set forth i"
+        },
+        {
+          "id": "7_auriemma_will_sign_100_items_per_year_during_the_services_period_for_berkshire_7d543a54",
+          "heading": "7. Auriemma will sign 100 items per year during the Services Period for Berkshire provided all items are to be obtained at Berkshire's cost, provided,",
+          "section": "7",
+          "distance": 0.2300262451171875,
+          "graph_expanded": false,
+          "text_preview": "however, that Berkshire shall not sell any items autographed by Auriemma and Auriemma will not be required to sign any item that is manufactured\nby a competitor of Nike and subject to Nike's right to "
+        },
+        {
+          "id": "11_termination_by_berkshire_2cfccc37",
+          "heading": "11. TERMINATION BY BERKSHIRE.",
+          "section": "11",
+          "distance": 0.23305624723434448,
+          "graph_expanded": false,
+          "text_preview": "Berkshire may terminate this Agreement immediately by giving Auriemma notice if (i) Auriemma dies or is prevented by injury or illness from\nsatisfactorily performing the obligations required by this A"
+        },
+        {
+          "id": "20_indemnity_and_insurance_berkshire_shall_indemnify_and_hold_auriemma_harmless__73f6cf69",
+          "heading": "20. INDEMNITY AND INSURANCE. Berkshire shall indemnify and hold Auriemma harmless from and against any and all claims, actions, suits,",
+          "section": "20",
+          "distance": 0.24239188432693481,
+          "graph_expanded": false,
+          "text_preview": "proceedings, losses, damages and expenses (including, without limitation, reasonable attorneys', consultants' and experts' fees) (collectively,\n\"Claims\") arising out of or relating to any inaccuracy o"
+        },
+        {
+          "id": "6_auriemmas_endorsement_services_and_appearances_5e745bff",
+          "heading": "6. AURIEMMA'S ENDORSEMENT SERVICES AND APPEARANCES.",
+          "section": "6",
+          "distance": 0.24869698286056519,
+          "graph_expanded": false,
+          "text_preview": "(a) Berkshire acknowledges that Auriemma's primary obligations are those associated with his position as the head coach of the\nUniversity of Connecticut women's basketball team. Further, Berkshire ack"
+        }
+      ],
+      "latency_seconds": 8.66,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.1218,
+          "precisions": [
+            0.3421,
+            0.1351,
+            0.0833,
+            0.0571
+          ],
+          "brevity_penalty": 1.0,
+          "candidate_length": 38,
+          "reference_length": 26
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 0.3421,
+            "recall": 0.5,
+            "f1": 0.4063
+          },
+          "rouge2": {
+            "precision": 0.1351,
+            "recall": 0.2,
+            "f1": 0.1613
+          },
+          "rougeL": {
+            "precision": 0.2632,
+            "recall": 0.3846,
+            "f1": 0.3125
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": null,
+            "reason": "judge did not return parseable verdicts",
+            "claims": [
+              "Berkshire agreed to pay Auriemma $480,000.00.",
+              "Auriemma will receive four equal cash payments.",
+              "The first payment of $90,000.00 will be made on June 1, 2012.",
+              "The second payment of $90,000.00 will be made on June 1, 2013.",
+              "The third payment of $90,000.00 will be made on June 1, 2014.",
+              "The fourth payment of $90,000.00 will be made on June 1, 2015."
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.8581,
+            "generated_questions": [
+              "What is the total amount Berkshire agreed to pay Auriemma?",
+              "When will the first payment be made to Auriemma?",
+              "How many payments will Auriemma receive from Berkshire?"
+            ],
+            "similarities": [
+              0.9555,
+              0.7249,
+              0.8939
+            ]
+          },
+          "context_precision": {
+            "score": 0.7,
+            "useful_flags": [
+              1,
+              0,
+              0,
+              0,
+              1
+            ],
+            "reasons": [
+              "The retrieved chunk provides a clear and detailed breakdown of the compensation agreed to by Berkshire for Auriemma, including both cash payments and stock issuances.",
+              "The retrieved chunk does not provide information about the total compensation Berkshire agreed to pay Auriemma.",
+              "The retrieved chunk does not provide any information about the total compensation Berkshire agreed to pay Auriemma.",
+              "The retrieved chunk does not mention Auriemma or compensation, it only discusses Berkshire's liability for claims arising from inaccuracy or breach of representations.",
+              "The retrieved chunk provides specific details about Auriemma's obligations and compensation, including the amount ($480,000) and reimbursement for expenses."
+            ]
+          },
+          "context_recall": {
+            "score": null,
+            "reason": "judge did not return parseable verdicts"
+          },
+          "ragas_score": 0.771
+        },
+        "laaj": {
+          "scores": {
+            "correctness": 2,
+            "completeness": 1,
+            "groundedness": 3,
+            "clarity": 4
+          },
+          "reasons": {
+            "correctness": "The system incorrectly stated that the cash payments were $90,000.00 each, when in fact they are $30,000.00 each.",
+            "completeness": "The system did not mention the stock issuances as part of Auriemma's compensation.",
+            "groundedness": "Most statements in the answer are supported by the context, but one statement about cash payments is incorrect.",
+            "clarity": "The answer is mostly clear and understandable, but contains a minor error that may cause confusion."
+          },
+          "overall_verdict": "The system's answer contains several errors and lacks completeness, making it of limited usefulness.",
+          "mean_score_5": 2.5,
+          "normalised_score": 0.375
+        }
+      }
+    },
+    {
+      "id": "Q4",
+      "category": "compensation",
+      "question": "How is the cash portion of the compensation paid out?",
+      "ground_truth": "Berkshire makes four equal cash payments of Ninety Thousand Dollars ($90,000.00) each, paid on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015.",
+      "generated_answer": "The cash portion of the compensation ($480,000) is to be paid out in four equal installments:\n\n* June 1, 2012: $90,000\n* June 1, 2013: $90,000\n* June 1, 2014: $90,000\n* June 1, 2015: $90,000\n\nUnless the client (Berkshire) chooses to pay by wire transfer or bank transfer instead of check.",
+      "retrieved_clauses": [
+        {
+          "id": "5_payments_auriemma_may_elect_to_have_cash_payments_due_auriemma_hereunder_made__78614178",
+          "heading": "5. PAYMENTS. Auriemma may elect to have cash payments due Auriemma hereunder made by check, wire transfer, or bank transfer. Unless such",
+          "section": "5",
+          "distance": 0.34440433979034424,
+          "graph_expanded": false,
+          "text_preview": "election is made in writing, all cash payments shall be made by check, drawn to the order of Auriemma or its designated entity or entities and\ndelivered to the address first stated above. Past due cas"
+        },
+        {
+          "id": "4_compensation_857bf989",
+          "heading": "4. COMPENSATION.",
+          "section": "4",
+          "distance": 0.3683887720108032,
+          "graph_expanded": false,
+          "text_preview": "(a) In consideration of the rights and benefits granted to Berkshire hereunder, Berkshire shall pay to Auriemma the sum of Four\nHundred Eighty Thousand and 00/100 Dollars ($480,000.00), as set forth i"
+        },
+        {
+          "id": "10_termination_and_default_d03cf9ee",
+          "heading": "10. TERMINATION AND DEFAULT.",
+          "section": "10",
+          "distance": 0.42790305614471436,
+          "graph_expanded": false,
+          "text_preview": "a) TERMINATION FOR BREACH. Either Party shall have the right, without prejudice to any other rights it may have, to terminate this\nAgreement if the other Party materially breaches its obligation hereu"
+        },
+        {
+          "id": "12_other_remedies_and_rights_bfd50a20",
+          "heading": "12. OTHER REMEDIES AND RIGHTS.",
+          "section": "12",
+          "distance": 0.4319928288459778,
+          "graph_expanded": false,
+          "text_preview": "The termination rights set forth herein shall not constitute the exclusive remedy of the non-defaulting party. Termination in accordance with the\nabove provisions shall be without prejudice to any rig"
+        },
+        {
+          "id": "2_endorsement_and_grant_of_rights_during_the_contract_period_a352fe4c",
+          "heading": "2. ENDORSEMENT AND GRANT OF RIGHTS. During the Contract Period:",
+          "section": "2",
+          "distance": 0.43747997283935547,
+          "graph_expanded": false,
+          "text_preview": "a) Subject to the terms of Paragraph 6 below, Auriemma will make the appearances and provide to Berkshire during the Services Period\nthe services, initiatives and programs described in Schedule A atta"
+        }
+      ],
+      "latency_seconds": 13.26,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.0559,
+          "precisions": [
+            0.3585,
+            0.1731,
+            0.0784,
+            0.002
+          ],
+          "brevity_penalty": 1.0,
+          "candidate_length": 53,
+          "reference_length": 28
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 0.3585,
+            "recall": 0.6786,
+            "f1": 0.4691
+          },
+          "rouge2": {
+            "precision": 0.1731,
+            "recall": 0.3333,
+            "f1": 0.2278
+          },
+          "rougeL": {
+            "precision": 0.283,
+            "recall": 0.5357,
+            "f1": 0.3704
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": null,
+            "reason": "judge did not return parseable verdicts",
+            "claims": [
+              "The cash portion of the compensation is $480,000.",
+              "The client can choose to pay by wire transfer or bank transfer instead of check.",
+              "The first installment is due on June 1, 2012 for $90,000.",
+              "The second installment is due on June 1, 2013 for $90,000.",
+              "The third installment is due on June 1, 2014 for $90,000.",
+              "The fourth installment is due on June 1, 2015 for $90,000."
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.6994,
+            "generated_questions": [
+              "What is the total amount of cash compensation being paid out?",
+              "How many equal installments will the cash portion be paid in?",
+              "When are the first three payments due?"
+            ],
+            "similarities": [
+              0.8686,
+              0.7171,
+              0.5124
+            ]
+          },
+          "context_precision": {
+            "score": 0.5,
+            "useful_flags": [
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            "reasons": [
+              "The retrieved chunk does not provide information on how the cash portion of the compensation is paid out, only the payment terms and interest rate.",
+              "The retrieved chunk provides a clear breakdown of the cash and stock portions of the compensation, including the amount ($90,000) and the issuance dates.",
+              "",
+              "The retrieved chunk does not provide any information about the cash portion of the compensation paid out.",
+              ""
+            ]
+          },
+          "context_recall": {
+            "score": 0.5,
+            "attributed_sentences": 1,
+            "total_sentences": 2,
+            "verdicts": [
+              {
+                "sentence": "Berkshire will make four (4) equal cash payments to Auriemma in the amount of Ninety Thousand and 00/100 Dollars ($90,000.00) on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015.",
+                "attributed": 1,
+                "reason": ""
+              },
+              {
+                "sentence": "Berkshire makes four equal cash payments of Ninety Thousand Dollars ($90,000.00) each, paid on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015.",
+                "attributed": 0,
+                "reason": ""
+              }
+            ]
+          },
+          "ragas_score": 0.5525
+        },
+        "laaj": {
+          "scores": {
+            "correctness": 2,
+            "completeness": 1,
+            "groundedness": 3,
+            "clarity": 2
+          },
+          "reasons": {
+            "correctness": "Incorrect amount of cash payments ($90,000 instead of $480,000)",
+            "completeness": "Does not cover the entire reference",
+            "groundedness": "Mostly grounded but contains an unsupported claim (unless client chooses to pay by wire transfer or bank transfer)",
+            "clarity": "Hard to follow due to wordy phrasing and omission of crucial information"
+          },
+          "overall_verdict": "",
+          "mean_score_5": 2.0,
+          "normalised_score": 0.25
+        }
+      }
+    },
+    {
+      "id": "Q5",
+      "category": "compensation",
+      "question": "What stock compensation does Auriemma receive and how is its value determined?",
+      "ground_truth": "On June 1 of 2012, 2013, 2014 and 2015, Auriemma receives four blocks of unrestricted common stock in Berkshire Hills Bancorp, Inc. (BHLB), Berkshire's parent company. Each block is worth Thirty Thousand Dollars ($30,000.00) as of its issuance date, valued using the closing price of BHLB shares on the last trading day immediately before the issuance date.",
+      "generated_answer": "Auriemma receives four blocks of shares of unrestricted common stock of Berkshire Hills Bancorp, Inc. (BHLB) as stock compensation.\n\nThe value of each block of shares is $30,000, which is based on the closing price of BHLB common shares at the end of the last trading day immediately preceding the issuance date.",
+      "retrieved_clauses": [
+        {
+          "id": "4_compensation_857bf989",
+          "heading": "4. COMPENSATION.",
+          "section": "4",
+          "distance": 0.21694272756576538,
+          "graph_expanded": false,
+          "text_preview": "(a) In consideration of the rights and benefits granted to Berkshire hereunder, Berkshire shall pay to Auriemma the sum of Four\nHundred Eighty Thousand and 00/100 Dollars ($480,000.00), as set forth i"
+        },
+        {
+          "id": "8_protection_of_the_auriemma_identification_berkshire_and_auriemma_agree_that_th_43fbd068",
+          "heading": "8. PROTECTION OF THE AURIEMMA IDENTIFICATION. Berkshire and Auriemma agree that they will take all necessary steps during the",
+          "section": "8",
+          "distance": 0.26924145221710205,
+          "graph_expanded": false,
+          "text_preview": "Contract Period and thereafter to protect the Auriemma Identification in connection with the Endorsement Services."
+        },
+        {
+          "id": "2_endorsement_and_grant_of_rights_during_the_contract_period_a352fe4c",
+          "heading": "2. ENDORSEMENT AND GRANT OF RIGHTS. During the Contract Period:",
+          "section": "2",
+          "distance": 0.28584879636764526,
+          "graph_expanded": false,
+          "text_preview": "a) Subject to the terms of Paragraph 6 below, Auriemma will make the appearances and provide to Berkshire during the Services Period\nthe services, initiatives and programs described in Schedule A atta"
+        },
+        {
+          "id": "7_auriemmas_approval_6b823e05",
+          "heading": "7. AURIEMMA'S APPROVAL.",
+          "section": "7",
+          "distance": 0.29480934143066406,
+          "graph_expanded": false,
+          "text_preview": "a) Berkshire shall use the Auriemma Identification only in such a form and manner as is specifically approved by Auriemma and, upon\nthe reasonable request by Auriemma, shall use any reasonable legends"
+        },
+        {
+          "id": "7_auriemma_will_sign_100_items_per_year_during_the_services_period_for_berkshire_7d543a54",
+          "heading": "7. Auriemma will sign 100 items per year during the Services Period for Berkshire provided all items are to be obtained at Berkshire's cost, provided,",
+          "section": "7",
+          "distance": 0.29918617010116577,
+          "graph_expanded": false,
+          "text_preview": "however, that Berkshire shall not sell any items autographed by Auriemma and Auriemma will not be required to sign any item that is manufactured\nby a competitor of Nike and subject to Nike's right to "
+        }
+      ],
+      "latency_seconds": 7.13,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.3149,
+          "precisions": [
+            0.6604,
+            0.4423,
+            0.2941,
+            0.18
+          ],
+          "brevity_penalty": 0.893,
+          "candidate_length": 53,
+          "reference_length": 59
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 0.6604,
+            "recall": 0.5932,
+            "f1": 0.625
+          },
+          "rouge2": {
+            "precision": 0.4423,
+            "recall": 0.3966,
+            "f1": 0.4182
+          },
+          "rougeL": {
+            "precision": 0.5849,
+            "recall": 0.5254,
+            "f1": 0.5536
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": 0.6667,
+            "supported_claims": 2,
+            "total_claims": 3,
+            "claims": [
+              "Auriemma receives four blocks of shares of unrestricted common stock of Berkshire Hills Bancorp, Inc. (BHLB).",
+              "The value of each block of shares is $30,000.",
+              "The value of each block of shares is based on the closing price of BHLB common shares at the end of the last trading day immediately preceding the issuance date."
+            ],
+            "verdicts": [
+              {
+                "claim": "Auriemma receives four blocks of shares of unrestricted common stock of Berkshire Hills Bancorp, Inc. (BHLB).",
+                "supported": 1,
+                "reason": "Paragraph (c) states that Berkshire will cause to be issued to Auriemma on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015, four (4) blocks of shares of unrestricted common stock of Berkshire's parent corporation, Berkshire Hills Bancorp, Inc. (BHLB)."
+              },
+              {
+                "claim": "The value of each block of shares is $30,000.",
+                "supported": 0,
+                "reason": "Paragraph (c) states that the value of each block of shares as of its respective issuance date shall have a value of Thirty Thousand and 00/100 Dollars ($30,000.00), but it does not confirm that this is the actual amount received by Auriemma."
+              },
+              {
+                "claim": "The value of each block of shares is based on the closing price of BHLB common shares at the end of the last trading day immediately preceding the issuance date.",
+                "supported": 1,
+                "reason": "Paragraph (c) states that the value of each block of shares as of its respective issuance date shall have a value of Thirty Thousand and 00/100 Dollars ($30,000.00), which is based on the closing price of BHLB common shares at the end of the last trading day immediately preceding the issuance date."
+              }
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.6796,
+            "generated_questions": [
+              "What type of compensation did Auriemma receive from Berkshire Hills Bancorp, Inc.?",
+              "How much was each block of shares valued in the stock compensation?",
+              "At what price were BHLB common shares used to determine the value of the blocks?"
+            ],
+            "similarities": [
+              0.8086,
+              0.6989,
+              0.5312
+            ]
+          },
+          "context_precision": {
+            "score": 0.75,
+            "useful_flags": [
+              1,
+              0,
+              0,
+              1,
+              0
+            ],
+            "reasons": [
+              "The retrieved chunk provides specific details about the stock compensation Auriemma receives and how its value is determined, including the number of blocks, issuance dates, and values.",
+              "Lack of relevant information about stock compensation and its value determination.",
+              "The retrieved chunk does not provide any information about stock compensation received by Auriemma.",
+              "The retrieved chunk provides specific details about Auriemma's stock compensation and how its value is determined, which matches the correct answer.",
+              "The retrieved chunk does not provide information about Auriemma's stock compensation or its value determination."
+            ]
+          },
+          "context_recall": {
+            "score": 0.5,
+            "attributed_sentences": 1,
+            "total_sentences": 2,
+            "verdicts": [
+              {
+                "sentence": "On June 1 of 2012, 2013, 2014 and 2015, Auriemma receives four blocks of unrestricted common stock in Berkshire Hills Bancorp, Inc. (BHLB), Berkshire's parent company.",
+                "attributed": 0,
+                "reason": "Missing specific date for receipt"
+              },
+              {
+                "sentence": "Each block is worth Thirty Thousand Dollars ($30,000.00) as of its issuance date, valued using the closing price of BHLB shares on the last trading day immediately before the issuance date.",
+                "attributed": 1,
+                "reason": "Present in context"
+              }
+            ]
+          },
+          "ragas_score": 0.6344
+        },
+        "laaj": {
+          "scores": {
+            "correctness": 2,
+            "completeness": 1,
+            "groundedness": 2,
+            "clarity": 4
+          },
+          "reasons": {
+            "correctness": "The system incorrectly stated that the value of each block is $30,000, when in fact it should be $90,000.00 as per paragraph (c) of the contract.",
+            "completeness": "The system only mentioned stock compensation but failed to mention the cash payments and issuance dates",
+            "groundedness": "The system did not fully explain how the value of each block is determined, as it should be based on the closing price of BHLB shares on the last trading day immediately before the issuance date",
+            "clarity": "The answer is clear and easy to understand, but could benefit from more explanation of how the value of each block is determined"
+          },
+          "overall_verdict": "The system's answer contains some factual inaccuracies and lacks completeness, but its overall clarity makes it somewhat usable.",
+          "mean_score_5": 2.25,
+          "normalised_score": 0.3125
+        }
+      }
+    },
+    {
+      "id": "Q6",
+      "category": "payment_terms",
+      "question": "What interest applies to late payments?",
+      "ground_truth": "Cash payments that are more than thirty (30) days past due after Berkshire receives the applicable invoice bear interest at one percent (1%) per month.",
+      "generated_answer": "One percent (1%) per month.",
+      "retrieved_clauses": [
+        {
+          "id": "5_payments_auriemma_may_elect_to_have_cash_payments_due_auriemma_hereunder_made__78614178",
+          "heading": "5. PAYMENTS. Auriemma may elect to have cash payments due Auriemma hereunder made by check, wire transfer, or bank transfer. Unless such",
+          "section": "5",
+          "distance": 0.33926117420196533,
+          "graph_expanded": false,
+          "text_preview": "election is made in writing, all cash payments shall be made by check, drawn to the order of Auriemma or its designated entity or entities and\ndelivered to the address first stated above. Past due cas"
+        },
+        {
+          "id": "15_force_majeur_0dd80abd",
+          "heading": "15. FORCE MAJEUR.",
+          "section": "15",
+          "distance": 0.39058804512023926,
+          "graph_expanded": false,
+          "text_preview": "Notwithstanding anything else contained in this Agreement, neither Party will be liable for any delay in the performance of any of its obligations if\nsuch delay is caused by any reason wholly outside "
+        },
+        {
+          "id": "10_termination_and_default_d03cf9ee",
+          "heading": "10. TERMINATION AND DEFAULT.",
+          "section": "10",
+          "distance": 0.40011799335479736,
+          "graph_expanded": false,
+          "text_preview": "a) TERMINATION FOR BREACH. Either Party shall have the right, without prejudice to any other rights it may have, to terminate this\nAgreement if the other Party materially breaches its obligation hereu"
+        },
+        {
+          "id": "12_other_remedies_and_rights_bfd50a20",
+          "heading": "12. OTHER REMEDIES AND RIGHTS.",
+          "section": "12",
+          "distance": 0.41651082038879395,
+          "graph_expanded": false,
+          "text_preview": "The termination rights set forth herein shall not constitute the exclusive remedy of the non-defaulting party. Termination in accordance with the\nabove provisions shall be without prejudice to any rig"
+        },
+        {
+          "id": "20_indemnity_and_insurance_berkshire_shall_indemnify_and_hold_auriemma_harmless__73f6cf69",
+          "heading": "20. INDEMNITY AND INSURANCE. Berkshire shall indemnify and hold Auriemma harmless from and against any and all claims, actions, suits,",
+          "section": "20",
+          "distance": 0.44017261266708374,
+          "graph_expanded": false,
+          "text_preview": "proceedings, losses, damages and expenses (including, without limitation, reasonable attorneys', consultants' and experts' fees) (collectively,\n\"Claims\") arising out of or relating to any inaccuracy o"
+        }
+      ],
+      "latency_seconds": 7.91,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.0183,
+          "precisions": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "brevity_penalty": 0.0183,
+          "candidate_length": 5,
+          "reference_length": 25
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333
+          },
+          "rouge2": {
+            "precision": 1.0,
+            "recall": 0.1667,
+            "f1": 0.2857
+          },
+          "rougeL": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": 0.6667,
+            "supported_claims": 2,
+            "total_claims": 3,
+            "claims": [
+              "The interest rate is 1%.",
+              "The interest accrues monthly.",
+              "One percent (1%) equals 0.01."
+            ],
+            "verdicts": [
+              {
+                "claim": "The interest rate is 1%",
+                "supported": 1,
+                "reason": "Directly stated in the source text"
+              },
+              {
+                "claim": "The interest accrues monthly",
+                "supported": 0,
+                "reason": "Not directly stated in the source text, but implied by the monthly interest rate"
+              },
+              {
+                "claim": "One percent (1%) equals 0.01",
+                "supported": 1,
+                "reason": "Can be calculated from the given information"
+              }
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.5664,
+            "generated_questions": [
+              "What is the monthly interest rate?",
+              "How much interest does one percent represent as a decimal?",
+              "Is one percent per month considered a high-interest rate?"
+            ],
+            "similarities": [
+              0.5851,
+              0.5634,
+              0.5507
+            ]
+          },
+          "context_precision": {
+            "score": 1.0,
+            "useful_flags": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "reasons": [
+              "The retrieved chunk contains the exact interest rate (1%) and the condition for late payments (more than thirty days past due) as stated in the correct answer.",
+              "The retrieved chunk does not mention interest on late payments, but rather discusses Force Majeur Events and their impact on contract obligations.",
+              "",
+              "The retrieved chunk does not mention interest on late payments, it discusses termination rights and attorney's fees.",
+              ""
+            ]
+          },
+          "context_recall": {
+            "score": null,
+            "reason": "judge did not return parseable verdicts"
+          },
+          "ragas_score": 0.7033
+        },
+        "laaj": {
+          "scores": {
+            "correctness": 2,
+            "completeness": 1,
+            "groundedness": 3,
+            "clarity": 4
+          },
+          "reasons": {
+            "correctness": "Incorrectly stated interest rate as one percent (1%) per month instead of one percent (1%) per month",
+            "completeness": "Does not mention the specific time frame after which late payments bear interest",
+            "groundedness": "Mostly grounded but contains an unsupported claim about the interest rate being one percent (1%) per month",
+            "clarity": "Clear with minor legalese"
+          },
+          "overall_verdict": "",
+          "mean_score_5": 2.5,
+          "normalised_score": 0.375
+        }
+      }
+    },
+    {
+      "id": "Q7",
+      "category": "obligations",
+      "question": "What are the rules about apparel Auriemma wears during appearances?",
+      "ground_truth": "Any apparel Berkshire asks Auriemma to wear during an appearance or photo shoot must be approved by Auriemma at least forty-eight (48) hours in advance, and it must be Nike branded apparel.",
+      "generated_answer": "According to the contract, here are the rules about apparel Auriemma wears during appearances:\n\n* Any apparel that Auriemma is requested by Berkshire to wear must be approved by Auriemma at least 48 hours in advance.\n* The apparel must be Nike-branded.\n\nIn other words, Berkshire needs to ask Auriemma for approval before using any specific apparel, and the apparel has to be from Nike.",
+      "retrieved_clauses": [
+        {
+          "id": "6_auriemmas_endorsement_services_and_appearances_5e745bff",
+          "heading": "6. AURIEMMA'S ENDORSEMENT SERVICES AND APPEARANCES.",
+          "section": "6",
+          "distance": 0.20997780561447144,
+          "graph_expanded": false,
+          "text_preview": "(a) Berkshire acknowledges that Auriemma's primary obligations are those associated with his position as the head coach of the\nUniversity of Connecticut women's basketball team. Further, Berkshire ack"
+        },
+        {
+          "id": "7_auriemma_will_sign_100_items_per_year_during_the_services_period_for_berkshire_7d543a54",
+          "heading": "7. Auriemma will sign 100 items per year during the Services Period for Berkshire provided all items are to be obtained at Berkshire's cost, provided,",
+          "section": "7",
+          "distance": 0.2300478219985962,
+          "graph_expanded": false,
+          "text_preview": "however, that Berkshire shall not sell any items autographed by Auriemma and Auriemma will not be required to sign any item that is manufactured\nby a competitor of Nike and subject to Nike's right to "
+        },
+        {
+          "id": "5_auriemma_will_be_available_for_two_2_appearances_annually_during_the_services__60917e6e",
+          "heading": "5. Auriemma will be available for two (2) appearances annually during the Services Period within the Contract Territory, the date and location to be",
+          "section": "5",
+          "distance": 0.2512245178222656,
+          "graph_expanded": false,
+          "text_preview": "mutually agreed upon, each not more than one (1) hour in duration, where Auriemma will meet, greet and pose for photos."
+        },
+        {
+          "id": "3_exclusivity_auriemma_expressly_agrees_and_undertakes_that_6a3ed905",
+          "heading": "3. EXCLUSIVITY. Auriemma expressly agrees and undertakes that:",
+          "section": "3",
+          "distance": 0.2580741047859192,
+          "graph_expanded": false,
+          "text_preview": "a) The right to use the Auriemma Identification has not been previously granted nor will it be granted to anyone other than Berkshire\nfor use during the Contract Period within the Contract Territory i"
+        },
+        {
+          "id": "7_auriemmas_approval_6b823e05",
+          "heading": "7. AURIEMMA'S APPROVAL.",
+          "section": "7",
+          "distance": 0.2606898546218872,
+          "graph_expanded": false,
+          "text_preview": "a) Berkshire shall use the Auriemma Identification only in such a form and manner as is specifically approved by Auriemma and, upon\nthe reasonable request by Auriemma, shall use any reasonable legends"
+        }
+      ],
+      "latency_seconds": 9.96,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.1857,
+          "precisions": [
+            0.375,
+            0.2222,
+            0.1452,
+            0.0984
+          ],
+          "brevity_penalty": 1.0,
+          "candidate_length": 64,
+          "reference_length": 33
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 0.375,
+            "recall": 0.7273,
+            "f1": 0.4948
+          },
+          "rouge2": {
+            "precision": 0.2222,
+            "recall": 0.4375,
+            "f1": 0.2947
+          },
+          "rougeL": {
+            "precision": 0.3281,
+            "recall": 0.6364,
+            "f1": 0.433
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": 1.0,
+            "supported_claims": 2,
+            "total_claims": 2,
+            "claims": [
+              "Any apparel that Auriemma is requested by Berkshire to wear must be approved by Auriemma at least 48 hours in advance.",
+              "The apparel must be Nike-branded."
+            ],
+            "verdicts": [
+              {
+                "claim": "Any apparel that Auriemma is requested by Berkshire to wear during any appearance or any photo shoot session must be approved by Auriemma at least forty-eight (48) hours in advance and must be Nike branded apparel.",
+                "supported": 1,
+                "reason": "Directly stated in the context"
+              },
+              {
+                "claim": "The apparel must be Nike-branded.",
+                "supported": 1,
+                "reason": "Directly stated in the context"
+              }
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.8383,
+            "generated_questions": [
+              "What is the process for approving apparel for Auriemma's appearances?",
+              "Can Auriemma refuse to wear Berkshire-approved apparel?",
+              "Does Auriemma have any control over the specific Nike-branded apparel worn during appearances?"
+            ],
+            "similarities": [
+              0.8478,
+              0.8136,
+              0.8535
+            ]
+          },
+          "context_precision": {
+            "score": 0.9167,
+            "useful_flags": [
+              1,
+              1,
+              0,
+              1,
+              0
+            ],
+            "reasons": [
+              "The retrieved chunk contains rule (e) that directly addresses the question about apparel Auriemma wears during appearances.",
+              "The retrieved chunk provides additional information about Berkshire's restrictions on Auriemma's apparel, including the prohibition of autographed items by competitors of Nike.",
+              "Lacks specific information about apparel rules, only mentions meeting and posing for photos",
+              "The retrieved chunk contains specific details about apparel Auriemma wears during appearances, including the requirement for Nike branded apparel and the need for approval by Berkshire at least 48 hou",
+              "The retrieved chunk does not mention apparel Auriemma wears during appearances, only provides general guidelines for using the Auriemma Identification."
+            ]
+          },
+          "context_recall": {
+            "score": null,
+            "reason": "judge did not return parseable verdicts"
+          },
+          "ragas_score": 0.9136
+        },
+        "laaj": {
+          "scores": {
+            "correctness": 2,
+            "completeness": 1,
+            "groundedness": 2,
+            "clarity": 4
+          },
+          "reasons": {
+            "correctness": "The system incorrectly stated 'at least' instead of 'at least forty-eight (48) hours in advance', and also omitted the requirement that the apparel must be Nike-branded.",
+            "completeness": "The system did not mention the requirement for approval at least 48 hours in advance or the need for the apparel to be Nike-branded.",
+            "groundedness": "The system only partially quoted the relevant section of the contract and omitted some context.",
+            "clarity": "The answer was clear and easy to understand, but could have been more concise."
+          },
+          "overall_verdict": "The answer is mostly incorrect and incomplete, with a few minor issues in terms of clarity.",
+          "mean_score_5": 2.25,
+          "normalised_score": 0.3125
+        }
+      }
+    },
+    {
+      "id": "Q8",
+      "category": "termination",
+      "question": "On what grounds can Berkshire terminate the agreement immediately?",
+      "ground_truth": "Berkshire may terminate immediately on notice to Auriemma if: (i) Auriemma dies or is prevented by injury or illness from satisfactorily performing his obligations; (ii) Auriemma is convicted of a felony or a criminal offense involving dishonesty or fraud; or (iii) Auriemma publicly disparages Berkshire or its products.",
+      "generated_answer": "According to section [11. TERMINATION BY BERKSHIRE], Berkshire can terminate the agreement immediately on the following grounds:\n\n1. Auriemma dies or is prevented by injury or illness from satisfactorily performing the obligations required by this Agreement.\n2. Auriemma is convicted of a felony or criminal offense involving dishonesty or fraud.\n3. Auriemma publicly disparages Berkshire and/or its products.\n\nThese are the only grounds on which Berkshire can terminate the agreement immediately, as stated in section [11. TERMINATION BY BERKSHIRE].",
+      "retrieved_clauses": [
+        {
+          "id": "11_termination_by_berkshire_2cfccc37",
+          "heading": "11. TERMINATION BY BERKSHIRE.",
+          "section": "11",
+          "distance": 0.17713254690170288,
+          "graph_expanded": false,
+          "text_preview": "Berkshire may terminate this Agreement immediately by giving Auriemma notice if (i) Auriemma dies or is prevented by injury or illness from\nsatisfactorily performing the obligations required by this A"
+        },
+        {
+          "id": "10_termination_and_default_d03cf9ee",
+          "heading": "10. TERMINATION AND DEFAULT.",
+          "section": "10",
+          "distance": 0.2300509214401245,
+          "graph_expanded": false,
+          "text_preview": "a) TERMINATION FOR BREACH. Either Party shall have the right, without prejudice to any other rights it may have, to terminate this\nAgreement if the other Party materially breaches its obligation hereu"
+        },
+        {
+          "id": "12_other_remedies_and_rights_bfd50a20",
+          "heading": "12. OTHER REMEDIES AND RIGHTS.",
+          "section": "12",
+          "distance": 0.26813316345214844,
+          "graph_expanded": false,
+          "text_preview": "The termination rights set forth herein shall not constitute the exclusive remedy of the non-defaulting party. Termination in accordance with the\nabove provisions shall be without prejudice to any rig"
+        },
+        {
+          "id": "1_definitions_ca2d3b00",
+          "heading": "1. DEFINITIONS.",
+          "section": "1",
+          "distance": 0.2733825445175171,
+          "graph_expanded": false,
+          "text_preview": "The following terms shall be defined in the Agreement as follows:\n\na) \"CONTRACT PERIOD\" means that period of time commencing upon the full execution of this Agreement by both Parties and\nterminating o"
+        },
+        {
+          "id": "22_assignment_25881e44",
+          "heading": "22. ASSIGNMENT.",
+          "section": "22",
+          "distance": 0.27488064765930176,
+          "graph_expanded": false,
+          "text_preview": "This Agreement shall bind and inure to the benefit of Auriemma and his successors and permitted assigns. Nothing herein shall prevent Auriemma\nfrom assigning the monetary benefits (but not the obligat"
+        }
+      ],
+      "latency_seconds": 15.47,
+      "error": null,
+      "metrics": {
+        "bleu": {
+          "bleu": 0.32,
+          "precisions": [
+            0.475,
+            0.3544,
+            0.2821,
+            0.2208
+          ],
+          "brevity_penalty": 1.0,
+          "candidate_length": 80,
+          "reference_length": 48
+        },
+        "rouge": {
+          "rouge1": {
+            "precision": 0.475,
+            "recall": 0.7917,
+            "f1": 0.5937
+          },
+          "rouge2": {
+            "precision": 0.3544,
+            "recall": 0.5957,
+            "f1": 0.4444
+          },
+          "rougeL": {
+            "precision": 0.4625,
+            "recall": 0.7708,
+            "f1": 0.5781
+          }
+        },
+        "ragas": {
+          "faithfulness": {
+            "score": 0.6667,
+            "supported_claims": 2,
+            "total_claims": 3,
+            "claims": [
+              "Auriemma dies or is prevented by injury or illness from satisfactorily performing the obligations required by this Agreement.",
+              "Auriemma is convicted of a felony or criminal offense involving dishonesty or fraud.",
+              "Auriemma publicly disparages Berkshire and/or its products."
+            ],
+            "verdicts": [
+              {
+                "claim": "Auriemma dies or is prevented by injury or illness from satisfactorily performing the obligations required by this Agreement.",
+                "supported": 1,
+                "reason": " clause (i) of section 1 in the context"
+              },
+              {
+                "claim": "Auriemma is convicted of a felony or criminal offense involving dishonesty or fraud.",
+                "supported": 0,
+                "reason": "not mentioned in the context"
+              },
+              {
+                "claim": "Auriemma publicly disparages Berkshire and/or its products.",
+                "supported": 1,
+                "reason": "clause (iii) of section 1 in the context"
+              }
+            ]
+          },
+          "answer_relevancy": {
+            "score": 0.8809,
+            "generated_questions": [
+              "What are the specific circumstances under which Berkshire can terminate the agreement immediately?",
+              "How many grounds allow for immediate termination according to section [11. TERMINATION BY BERKSHIRE]?",
+              "Can Berkshire terminate the agreement if Auriemma is simply unable to fulfill their obligations due to personal reasons?"
+            ],
+            "similarities": [
+              0.9848,
+              0.7868,
+              0.871
+            ]
+          },
+          "context_precision": {
+            "score": 1.0,
+            "useful_flags": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "reasons": [
+              "The retrieved chunk contains all three grounds for termination mentioned in the correct answer, with minor formatting differences.",
+              "The retrieved chunk provides specific details on termination grounds, including material breach and insolvency, which aligns with the correct answer.",
+              "Provides context on termination rights and attorney's fees, supporting grounds for immediate termination.",
+              "The retrieved chunk provides definitions for several key terms in the agreement, including Contract Period, Services Period, Contract Territory, Financial Services, Auriemma Identification, Rights, Be",
+              "The retrieved chunk contains specific conditions under which Berkshire can terminate the agreement immediately, matching the correct answer."
+            ]
+          },
+          "context_recall": {
+            "score": 0.8889,
+            "attributed_sentences": 16,
+            "total_sentences": 18,
+            "verdicts": [
+              {
+                "sentence": "Berkshire may terminate immediately on notice to Auriemma if: (i) Auriemma dies or is prevented by injury or illness from satisfactorily performing his obligations; (ii) Auriemma is convicted of a felony or a criminal offense involving dishonesty or fraud; or (iii) Auriemma publicly disparages Berkshire or its products.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "Either Party shall have the right, without prejudice to any other rights it may have, to terminate this Agreement if the other Party materially breaches its obligation hereunder and such breach remains uncured.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "A material breach occurs if either Party (i) fails to make any payment, or (ii) fails to observe or perform any of the covenants, agreements, or obligations (other than payments of money).",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "Upon the breach of either of the above conditions, the non-defaulting party may terminate this Agreement as follows: ...",
+                "attributed": 0,
+                "reason": "The retrieved context does not contain specific details about the termination process for a material breach."
+              },
+              {
+                "sentence": "If either Party (the ‘Bankrupt Party‖), (i) commences or becomes the subject of any case or proceeding under the bankruptcy or insolvency laws; ...",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "Whether or not such notice is given, the other Party shall have the right, to the fullest extent permitted under applicable law, following the occurrence of any Event of Insolvency and without prejudice to any other rights it may have, at any time thereafter to terminate this Agreement, effective immediately upon giving notice to the Bankrupt Party.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "Upon the expiration or termination of this Agreement for any reason (i) all payments that have accrued prior to the termination or expiration of this Agreement will be payable in full within thirty (30) days thereof, but any obligations to make further payments due, or that may have come due, under this Agreement shall become null and void.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "c) EFFECT OF TERMINATION. Upon the expiration or termination of this Agreement for any reason (ii) except as otherwise provided herein, the Services Period and the Contract Period shall end immediately and Berkshire shall promptly cease all use of the Auriemma Identification including any displays, documents, artwork, symbols, logos trademarks, trade names, photographic or graphic representations, depictions and/or other materials ...,",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "d) CONTRACT TERRITORY shall be any State in which Berkshire currently, or at any time during the Contract Period, offers Banking Services.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "e) FINANCIAL SERVICES shall mean banking, lending, financial and wealth management products and services offered by Berkshire and insurance products and services offered by Berkshire’s affiliate Berkshire Insurance Group, Inc.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "f) AURIEMMA IDENTIFICATION shall mean any words, symbols, photographic or graphic representations, statements by Auriemma or any combination thereof which identify Auriemma ...,",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "g) RIGHTS shall mean all of the endorsement rights, services and other rights and benefits granted to Berkshire in this Agreement.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "h) BERKSHIRE COMPETITOR is any person or entity that in any way competes with Berkshire’s financial services.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "i) $ shall mean the lawful currency of the United States of America unless otherwise specified.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "This Agreement shall bind and inure to the benefit of Auriemma and his successors and permitted assigns.",
+                "attributed": 0,
+                "reason": "The retrieved context does not contain specific details about who is bound by the agreement."
+              },
+              {
+                "sentence": "Nothing herein shall prevent Auriemma from assigning the monetary benefits (but not the obligations) of this Agreement, as he may so desire.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "Berkshire may not assign this Agreement, in whole or in part, without Auriemma’s written consent.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              },
+              {
+                "sentence": "In the case of reorganization, merger, consolidation, or sale of all or substantially all of its assets, any attempt to assign this Agreement other than as permitted above will be null and void.",
+                "attributed": 1,
+                "reason": "The retrieved context contains the information needed to support this sentence."
+              }
+            ]
+          },
+          "ragas_score": 0.8403
+        },
+        "laaj": {
+          "scores": {
+            "correctness": 4,
+            "completeness": 1,
+            "groundedness": 4,
+            "clarity": 5
+          },
+          "reasons": {
+            "correctness": "the system correctly identified all three grounds for termination but did not include a fourth ground mentioned in section [11. TERMINATION BY BERKSHIRE]",
+            "completeness": "the system only listed two of the three possible grounds for termination and omitted the third ground mentioned in section [11. TERMINATION BY BERKSHIRE]",
+            "groundedness": "all statements are supported by the context provided",
+            "clarity": "the answer is clear, direct and free of jargon"
+          },
+          "overall_verdict": "",
+          "mean_score_5": 3.5,
+          "normalised_score": 0.625
+        }
+      }
+    }
+  ]
+}

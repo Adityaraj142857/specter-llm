@@ -1,0 +1,101 @@
+{
+  "document": "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement.pdf",
+  "document_path": "data/CUAD_v1/full_contract_pdf/Part_I/Endorsement/BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement.pdf",
+  "source": "CUAD v1 — Endorsement Agreement between Geno Auriemma and Berkshire Bank",
+  "notes": "Ground-truth answers written by reading the contract directly. 'ground_truth_contexts' hold the verbatim clause text an ideal retriever should surface — used by the RAGAS context-recall metric.",
+  "qa_pairs": [
+    {
+      "id": "Q1",
+      "question": "Who are the parties to this endorsement agreement?",
+      "ground_truth": "The agreement is between Geno Auriemma, an individual referred to as 'Auriemma', and Berkshire Bank, a Massachusetts savings bank with its principal place of business at 24 North Street, Pittsfield, MA 01210.",
+      "ground_truth_contexts": [
+        "THIS ENDORSEMENT AGREEMENT (\"Agreement\") by and between GENO AURIEMMA (\"Auriemma\") and BERKSHIRE BANK, a Massachusetts savings bank with its principal place of business at 24 North Street, Pittsfield, MA 01210 (\"Berkshire\")."
+      ],
+      "category": "parties"
+    },
+    {
+      "id": "Q2",
+      "question": "When does the contract period end, and when does the services period end?",
+      "ground_truth": "Both periods start when the agreement is fully executed by both parties. The Contract Period ends on May 31, 2016, and the Services Period ends on May 31, 2014, unless either is terminated sooner under the agreement.",
+      "ground_truth_contexts": [
+        "\"CONTRACT PERIOD\" means that period of time commencing upon the full execution of this Agreement by both Parties and terminating on May 31, 2016 unless sooner terminated under this Agreement.",
+        "\"SERVICES PERIOD\" means that period of time commencing upon the full execution of this Agreement by both Parties and terminating on May 31, 2014 unless sooner terminated under this Agreement."
+      ],
+      "category": "term"
+    },
+    {
+      "id": "Q3",
+      "question": "What is the total compensation Berkshire agreed to pay Auriemma?",
+      "ground_truth": "Berkshire agreed to pay Auriemma a total of Four Hundred Eighty Thousand Dollars ($480,000.00) in consideration of the rights and benefits granted under the agreement.",
+      "ground_truth_contexts": [
+        "In consideration of the rights and benefits granted to Berkshire hereunder, Berkshire shall pay to Auriemma the sum of Four Hundred Eighty Thousand and 00/100 Dollars ($480,000.00)."
+      ],
+      "category": "compensation"
+    },
+    {
+      "id": "Q4",
+      "question": "How is the cash portion of the compensation paid out?",
+      "ground_truth": "Berkshire makes four equal cash payments of Ninety Thousand Dollars ($90,000.00) each, paid on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015.",
+      "ground_truth_contexts": [
+        "Berkshire will make four (4) equal cash payments to Auriemma in the amount of Ninety Thousand and 00/100 Dollars ($90,000.00) on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015."
+      ],
+      "category": "compensation"
+    },
+    {
+      "id": "Q5",
+      "question": "What stock compensation does Auriemma receive and how is its value determined?",
+      "ground_truth": "On June 1 of 2012, 2013, 2014 and 2015, Auriemma receives four blocks of unrestricted common stock in Berkshire Hills Bancorp, Inc. (BHLB), Berkshire's parent company. Each block is worth Thirty Thousand Dollars ($30,000.00) as of its issuance date, valued using the closing price of BHLB shares on the last trading day immediately before the issuance date.",
+      "ground_truth_contexts": [
+        "Berkshire will cause to be issued to Auriemma on June 1, 2012, June 1, 2013, June 1, 2014, and June 1, 2015, (each an \"issuance date\") four (4) blocks of shares of unrestricted common stock of Berkshire's parent corporation, Berkshire Hills Bancorp, Inc. (BHLB), each of which as of its respective issuance date shall have a value of Thirty Thousand and 00/100 Dollars ($30,000.00), based upon the closing price of BHLB common shares at the end of the last trading day immediately preceding the issuance date."
+      ],
+      "category": "compensation"
+    },
+    {
+      "id": "Q6",
+      "question": "What interest applies to late payments?",
+      "ground_truth": "Cash payments that are more than thirty (30) days past due after Berkshire receives the applicable invoice bear interest at one percent (1%) per month.",
+      "ground_truth_contexts": [
+        "Past due cash payments (i.e., payments due more than thirty (30) days after Berkshire's receipt of the applicable invoice) shall bear interest at the rate of one (1%) percent per month."
+      ],
+      "category": "payment_terms"
+    },
+    {
+      "id": "Q7",
+      "question": "What are the rules about apparel Auriemma wears during appearances?",
+      "ground_truth": "Any apparel Berkshire asks Auriemma to wear during an appearance or photo shoot must be approved by Auriemma at least forty-eight (48) hours in advance, and it must be Nike branded apparel.",
+      "ground_truth_contexts": [
+        "Any apparel that Auriemma is requested by Berkshire to wear during any appearance or any photo shoot session must be approved by Auriemma at least forty-eight (48) hours in advance and must be Nike branded apparel."
+      ],
+      "category": "obligations"
+    },
+    {
+      "id": "Q8",
+      "question": "On what grounds can Berkshire terminate the agreement immediately?",
+      "ground_truth": "Berkshire may terminate immediately on notice to Auriemma if: (i) Auriemma dies or is prevented by injury or illness from satisfactorily performing his obligations; (ii) Auriemma is convicted of a felony or a criminal offense involving dishonesty or fraud; or (iii) Auriemma publicly disparages Berkshire or its products.",
+      "ground_truth_contexts": [
+        "Berkshire may terminate this Agreement immediately by giving Auriemma notice if (i) Auriemma dies or is prevented by injury or illness from satisfactorily performing the obligations required by this Agreement; (ii) Auriemma is convicted of a felony or criminal offense involving dishonesty or fraud; or (iii) Auriemma publicly disparages Berkshire and/ or its products."
+      ],
+      "category": "termination"
+    },
+    {
+      "id": "Q9",
+      "question": "What are the cure periods for a material breach?",
+      "ground_truth": "For a failure to make a payment, the defaulting party has ten (10) days after receiving written notice to pay before the other party can terminate. For any other breach of covenants or obligations, the defaulting party has thirty (30) days after receiving written notice describing the default to cure it.",
+      "ground_truth_contexts": [
+        "(A) as to a default under clause (i) above, if payment is not made within ten (10) days after the defaulting party shall have received written notice of such failure to make payment; or (B) as to a default under clause (ii) above, if such default is not cured within thirty (30) days after the defaulting party shall have received written notice specifying in reasonable detail the nature of such default and such action the defaulting party must take in order to cure each such item of default."
+      ],
+      "category": "termination"
+    },
+    {
+      "id": "Q10",
+      "question": "Which law governs the agreement and how are disputes resolved?",
+      "ground_truth": "The agreement is governed by the laws of the State of Connecticut. Disputes are settled by arbitration under the Commercial Rules of the American Arbitration Association before a panel of three qualified arbitrators — Berkshire and Auriemma each pick one arbitrator and those two pick the third. If a party fails to pick within 30 days, or the two arbitrators fail to pick a third within thirty days, the American Arbitration Association appoints the missing arbitrator. Proceedings are held in the county where the responding party's principal executive office is located, and the prevailing party in arbitration or litigation can recover reasonable attorney's fees, costs and expenses.",
+      "ground_truth_contexts": [
+        "This Agreement shall be governed by and construed in accordance with the laws of the State of Connecticut.",
+        "Any dispute or difference between the parties hereto arising out of or relating to this Agreement shall be settled by arbitration in accordance with the Commercial Rules of the American Arbitration Association by a panel of three qualified arbitrators. Berkshire and Auriemma shall each choose an arbitrator and the two (2) arbitrators so chosen shall choose the third.",
+        "In the event of any arbitration or litigation, including breach, enforcement or interpretation, arising out of this Agreement, the prevailing party of such litigation shall be entitled to recover reasonable attorney's fees, costs, and expenses, including pre-litigation and appellate attorneys' fees and costs."
+      ],
+      "category": "governing_law"
+    }
+  ]
+}
